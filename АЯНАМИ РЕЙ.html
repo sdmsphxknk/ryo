@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title> Аянами Рей</title>
+
+	<style type="text/css">
+			html, body {
+			height: 100%
+		}
+
+		h2 {
+			color: lightblue;
+		}
+		h3 {
+			color: mediumpurple;
+		}
+        h1 {
+        	color: orangered;
+        }
+        body {
+        	display: flex;
+        	flex-direction: column;
+        	align-items: center;
+        	justify-content: center;
+        }
+
+	</style>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("OCT 30, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown").innerHTML = days + " дней" + hours + "часов"
+  + minutes + "минут" + seconds + "секунд";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</head>
+<body>
+	<h2>КТО Я</h2> 
+	<h3>я Аянами Рей</h3>
+	<h2>А КТО ТЫ?</h2>
+	<h3>Аянами Рей</h3>
+	<h1>ТЫ ТОЖЕ?????АЯНАМИ РЕЙ...???</h1>
+	<img src="рей.jpg">
+	<h1>ПРОШУ ОКАЗАТЬ МАТЕРИАЛЬНУЮ ПОМОЩЬ В ОГРОМНЫХ РАЗМЕРАХ ЧЕРЕЗ:<span id="countdown"></span></h1> 
+	<h4>по поводу присылания мне денег пишите в телегу: <a href="https://t.me/sdm28_spxknk" target="blank"> рё</a> </h4>
+</body>
+</html>
